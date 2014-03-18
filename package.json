@@ -1,0 +1,31 @@
+{
+  "author": "Kusa <ondrej.tyrychtr@gmail.com>",
+  "name": "AkSuchy",
+  "description": "Advokátní kancelář",
+  "version": "0.0.3",
+  "homepage": "http://aksuchy.cz",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kusa/AkSuchy.git"
+  },
+  "main": "index.html",
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.x",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-cssmin": "~0.6.2",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-less":"~0.10.x",
+    "grunt-git": "~0.1.5",
+    "grunt-image-resize": "~0.2.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
