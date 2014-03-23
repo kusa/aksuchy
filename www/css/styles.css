@@ -7,6 +7,9 @@ body {
 .hide {
   display: none;
 }
+.clear {
+  clear: both;
+}
 li {
   list-style-type: none;
 }
@@ -62,19 +65,19 @@ li {
   padding-bottom: 20px;
 }
 .header .content nav ul > li:hover .submenu {
-  -webkit-transition-property: opacity;
+  -webkit-transition-property: opacity, visibility;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: linear;
-  -o-transition-property: opacity;
+  -o-transition-property: opacity, visibility;
   -o-transition-duration: 1s;
   -o-transition-timing-function: linear;
-  -moz-transition-property: opacity;
+  -moz-transition-property: opacity, visibility;
   -moz-transition-duration: 1s;
   -moz-transition-timing-function: linear;
-  -ms-transition-property: opacity;
+  -ms-transition-property: opacity, visibility;
   -ms-transition-duration: 1s;
   -ms-transition-timing-function: linear;
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 1s;
   transition-timing-function: linear;
   transition-delay: 0s;
@@ -85,6 +88,7 @@ li {
   -moz-opacity: 1;
   -khtml-opacity: 1;
   opacity: 1;
+  visibility: visible;
 }
 .header .content nav ul > li > a {
   color: white;
@@ -103,30 +107,26 @@ li {
   -moz-opacity: 0;
   -khtml-opacity: 0;
   opacity: 0;
-  -webkit-transition-property: opacity;
-  -webkit-transition-duration: 1s;
+  -webkit-transition-property: opacity, visibility;
+  -webkit-transition-duration: 0.5s;
   -webkit-transition-timing-function: linear;
-  -o-transition-property: opacity;
-  -o-transition-duration: 1s;
+  -o-transition-property: opacity, visibility;
+  -o-transition-duration: 0.5s;
   -o-transition-timing-function: linear;
-  -moz-transition-property: opacity;
-  -moz-transition-duration: 1s;
+  -moz-transition-property: opacity, visibility;
+  -moz-transition-duration: 0.5s;
   -moz-transition-timing-function: linear;
-  -ms-transition-property: opacity;
-  -ms-transition-duration: 1s;
+  -ms-transition-property: opacity, visibility;
+  -ms-transition-duration: 0.5s;
   -ms-transition-timing-function: linear;
-  transition-property: opacity;
-  transition-duration: 1s;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
   transition-timing-function: linear;
   transition-delay: 1s;
   -moz-transition-delay: 1s;
   -webkit-transition-delay: 1s;
   -o-transition-delay: 1s;
-  transform: skewX(4deg);
-  -ms-transform: skewX(4deg);
-  -moz-transform: skewX(4deg);
-  -webkit-transform: skewX(4deg);
-  -o-transform: skewX(4deg);
+  visibility: hidden;
   margin-top: 40px;
   background: white;
   padding: 10px;
@@ -165,3 +165,232 @@ li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 /** End Header **/
+/**Carusel HP**/
+#carusel {
+  margin: 0px auto;
+  width: 100%;
+  height: 353px;
+  margin-top: 139px;
+  background: url('../img/carusel.png') no-repeat center center;
+}
+/**End Carusel HP**/
+/**Produkty HP**/
+#hp-products {
+  width: 100%;
+  -moz-box-shadow: 0px -2px 3px 1px #ffffff;
+  -webkit-box-shadow: 0px -2px 3px 1px #ffffff;
+  box-shadow: 0px -2px 3px 1px #ffffff;
+}
+#hp-products header {
+  display: block;
+  background: #0081c3;
+  line-height: 70px;
+}
+#hp-products header h1 {
+  display: block;
+  margin: 0px auto;
+  max-width: 1268px;
+  min-width: 960px;
+  color: white;
+  font-weight: normal;
+  font-size: 38px;
+  padding-left: 4px;
+}
+#hp-products .services {
+  background: #003871;
+  width: 100%;
+  height: 150px;
+}
+#hp-products .services #slider {
+  margin: 0px auto;
+  overflow: hidden;
+  width: 960px;
+}
+#hp-products .services #slider .viewport {
+  float: left;
+  width: 880px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+#hp-products .services #slider .viewport ul {
+  padding: 0px;
+}
+#hp-products .services #slider .buttons {
+  background: #a80110;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  margin: 60px 10px 0 0;
+  float: left;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 22px;
+}
+#hp-products .services #slider .next {
+  margin: 60px 0 0 10px;
+}
+#hp-products .services #slider .buttons:hover {
+  color: #C01313;
+  background: #fff;
+}
+#hp-products .services #slider .disable {
+  visibility: hidden;
+}
+#hp-products .services #slider .overview {
+  list-style: none;
+  position: absolute;
+  left: 0
+		    top: 0;
+}
+#hp-products .services #slider .overview li {
+  float: left;
+  margin: 10px 30px 0 0;
+  line-height: 22px;
+  overflow: hidden;
+  padding: 1px;
+  height: 121px;
+  border: 0px;
+  width: 263px;
+  color: white;
+}
+#hp-products .services #slider .overview li a {
+  display: block;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+#hp-products .services #slider .overview li a:hover {
+  text-decoration: none;
+}
+#hp-products .services #slider .overview li a:visited {
+  text-decoration: none;
+}
+/**End Produkty HP**/
+/**Info HP**/
+#hp-info {
+  margin: 0px auto;
+  max-width: 1268px;
+  min-width: 960px;
+  margin-top: 30px;
+}
+#hp-info > div {
+  width: 960px;
+  margin: 0px auto;
+}
+#hp-info > div article {
+  width: 300px;
+  height: 240px;
+  float: left;
+  margin-right: 30px;
+}
+#hp-info > div article header {
+  color: white;
+  font-size: 23px;
+  line-height: 48px;
+  padding: 0px 6px;
+}
+#hp-info > div article.info-a header {
+  background: #003871;
+}
+#hp-info > div article.info-b header {
+  background: #0081c3;
+}
+#hp-info > div article.info-c header {
+  background: #a80110;
+  margin-right: 0px;
+}
+#hp-info > div article.info-a .importanto {
+  color: #003871;
+}
+#hp-info > div article.info-b .importanto {
+  color: #0081c3;
+}
+#hp-info > div article.info-c {
+  margin-right: 0px;
+}
+#hp-info > div article.info-c .importanto {
+  color: #a80110;
+}
+#hp-info > div article > div {
+  background: white;
+  margin: 0px;
+  padding: 15px;
+  height: 172px;
+  overflow: hidden;
+}
+#hp-info > div article > div .news {
+  margin-bottom: 20px;
+}
+#hp-info > div article > div .news .date {
+  color: #003871;
+  font-size: 11px;
+}
+#hp-info > div article > div .news a.text {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+#hp-info > div article > div .news a.text:hover {
+  text-decoration: none;
+}
+#hp-info > div article > div .news a.text:visited {
+  text-decoration: none;
+}
+#hp-info > div article > div .importanto {
+  font-size: 18px;
+}
+#hp-info > div article > div .importanto small {
+  display: block;
+  font-size: 11px;
+  color: #7b7b7b;
+}
+/**End Info HP**/
+/**Footer**/
+#footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 20px 0px;
+  background: #141414;
+}
+#footer div {
+  margin: 0px auto;
+  max-width: 1068px;
+  min-width: 70px;
+  color: white;
+  padding: 0px 4px;
+}
+#footer div.copyright {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#footer div.info {
+  font-size: 11px;
+}
+#footer div.other {
+  margin-top: 25px;
+}
+#footer div.other a {
+  color: white;
+  font-size: 11px;
+}
+#footer div.other a:hover {
+  color: white;
+}
+#footer div.other a:visited {
+  color: white;
+}
+#footer div.other .hp-facebook {
+  float: right;
+}
+/**End Footer**/

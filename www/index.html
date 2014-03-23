@@ -11,8 +11,15 @@
 
         <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
-
+		 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.tinycarousel.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#slider').tinycarousel();
+		});
+		</script>
     </head>
     <body ng-controller="MainCtrl" >
         <!--[if lt IE 8]>
@@ -22,7 +29,7 @@
         <!-- Add your site or application content here 
         
     	<div id="ng-view" ng-view></div> -->
-    
+  
     	<section class="header">
     		<div class="separator">&nbsp;</div>
     		<div class="content">
@@ -32,8 +39,8 @@
     			</div>
     			<nav>
 					<ul>
-						<li>
-							<a href="">Home</a>
+						<li class="navi-1-level">
+							<a href="" >Home</a>
 						
 				
 							<ul class="submenu">
@@ -46,10 +53,10 @@
 							</ul>
 							
 						</li>
-						<li>
+						<li class="navi-1-level">
 							<a href="">About necost wwww</a>
 					
-							<ul class="submenu">
+							<ul class="submenu" >
 								<li class="arrow"></li>
 								<li><a href="">asas</a></li>
 								<li><a href="">sasas saasas </a></li>
@@ -59,25 +66,164 @@
 							</ul>
 							
 						</li>
-						<li><a href="">Blog sasasa</a></li>
+						<li class="navi-1-level"><a href="">Blog sasasa</a></li>
+						<li class="navi-1-level"><a href="">Blog sasasa</a></li>
 					</ul>
 				</nav>
     		</div>
     		
     	</section>
     	
+    	
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    	<script>
+    	
+    		$(".navi-1-level").mouseover(function(){
+    			var width = $(this).outerWidth();
+    			var submenu = $(this).find('.submenu');
+    			var subWidth = submenu.outerWidth();
+    			var spread = ((width - subWidth)/2);
+    			submenu.css('margin-left', (spread) + 'px');   			
+    		})
+    
+    	</script>
 
+  		<section id="carusel">
+	
+    	</section>
+    	
+    	<section id="hp-products">
+			<header><h1>Právní služby</h1></header>
+			<div class="services">
+				<div id="slider">
+					<a class="buttons prev" href="#">&#60;</a>
+						<div class="viewport">
+							<ul class="overview">
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+								<li>
+									<a href="">Obchodní právo</a>
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+									Nějaký pěkný text o právu.
+								</li>
+							</ul>
+						</div>
+					<a class="buttons next" href="#">&#62;</a>
+				</div>
+			</div>
+    	</section>
+    	
+    	<section id="hp-info">
+    		<div>
+    		<article class="info-a">
+    			<header>Nadpis 1</header>
+    				<div>
+    				<div class="news">
+    					<div class="date">13. 5. 2014 | pondělí</div>
+    					<a href="" class="text">
+    						Výroční sjezd
+    					</a>
+    				</div>
+    				<div class="news">
+    					<div class="date">13. 5. 2014 | pondělí</div>
+    					<a href="" class="text">
+    						Výroční sjezd
+    					</a>
+    				</div>
+    				<div class="importanto">
+    					Odkaz na stránku
+    					<small>Doplňující informace</small>
+    				</div>
+    			</div>
+    		</article>
+    		
+    		<article class="info-b">
+    			<header>Nadpis 1</header>
+    			<div>
+    				<div class="news">
+    					<div class="date">13. 5. 2014 | pondělí</div>
+    					<a href="" class="text">
+    						Výroční sjezd
+    					</a>
+    				</div>
+    				<div class="importanto">
+    					Odkaz na stránku
+    					<small>Doplňující informace</small>
+    				</div>
+    			</div>
+    		</article>
+    		
+    		<article class="info-c">
+    			<header>Nadpis 1</header>
+    			<div>
+    				<div class="news">
+    					<div class="date">13. 5. 2014 | pondělí</div>
+    					<a href="" class="text">
+    						Výroční sjezd
+    					</a>
+    				</div>
+    				<div class="importanto">
+    					Odkaz na stránku
+    					<small>Doplňující informace</small>
+    				</div>
+    			</div>
+    		</article>
+    		<div class="clear"></div>
+    		</div>
+    	</section>
+    	
+    	<section id="footer">
+    		<div class="copyright">
+    			Advokátní kancelář AK Suchý 2014 &copy;
+    		</div>
+    		<div class="info">
+    			Navzdory všeobecnému přesvědčení Lorem Ipsum není náhodný text. Jeho původ má kořeny v klasické latinské literatuře z roku 45 před Kristem, což znamená, že je více jak 2000 let staré. Richard McClintock, profesor latiny na univerzitě Hampden-Sydney stát Virginia, který se zabýval téměř neznámými latinskými slovy, odhalil prapůvod slova consectetur z pasáže Lorem Ipsum. Nejstarším dílem, v němž se pasáže Lorem Ipsum používají, je Cicerova kniha z roku 45 před Kristem s názvem "De Finibus Bonurum et Malorum" (O koncích dobra a zla), konkrétně jde pak o kapitoly 1.10.32 a 1.10.33. Tato kniha byla nejvíce známá v době renesance, jelikož pojednávala o etice. Úvodní řádky Lorem Ipsum, "Lorem ipsum dolor sit amet...", pocházejí z kapitoly 1.10.32 z uvedené knihy.
+    		</div>
+    		<div class="other">
+    			<a href="">Odkaz</a> |
+    			<a href="">Odkaz</a> |
+    			<a href="">Odkaz</a>
+    			
+    			<iframe class="hp-facebook" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=80&amp;appId=681444791907990" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;width:138px;"" allowTransparency="true"></iframe>
+    		</div>
+    	</section>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+         /*   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-XXXXX-X');ga('send','pageview');*/
         </script>
     </body>
 </html>
